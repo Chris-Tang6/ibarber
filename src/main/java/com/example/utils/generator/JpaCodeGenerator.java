@@ -23,8 +23,8 @@ public class JpaCodeGenerator {
     private static final DruidDataSource ds = new DruidDataSource();
 
     private static final String schemaName = "test";   // 数据库名称，必填
-    private static final String[][] tables = {{"t_category", "Category"}};   // 必填，第一个是数据库表名，第二个是实体类的名字，也就是别名
-    private static final String modelName = "权限";  // 必填
+    private static final String[][] tables = {{"staff", "Staff"}};   // 必填，第一个是数据库表名，第二个是实体类的名字，也就是别名
+    private static final String modelName = "员工";  // 必填
 
     static {
         // 必填

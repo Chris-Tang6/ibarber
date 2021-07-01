@@ -14,10 +14,10 @@
                 <div style="width: 60%; margin: 0 auto">
                     <input v-model="user.username" type="text" style="border: 1px solid #ccc; height: 40px; padding: 10px; width: 100%" placeholder="请输入账号">
                     <input v-model="user.password" type="password" style="border: 1px solid #ccc; height: 40px; padding: 10px; width: 100%; margin-top: 25px" placeholder="请输入密码">
-                    <div style="margin-top: 25px; line-height: 40px">
-                        <input v-model="user.code" type="text" style="border: 1px solid #ccc; padding: 10px; width: 65%; " placeholder="请输入验证码">
-                        <div id="picyzm" style="display: inline-block; height: 35px; vertical-align: middle;"></div>
-                    </div>
+<!--                    <div style="margin-top: 25px; line-height: 40px">-->
+<!--                        <input v-model="user.code" type="text" style="border: 1px solid #ccc; padding: 10px; width: 65%; " placeholder="请输入验证码">-->
+<!--                        <div id="picyzm" style="display: inline-block; height: 35px; vertical-align: middle;"></div>-->
+<!--                    </div>-->
 
                     <button @click="login" style="height: 40px; padding: 10px; width: 100%; margin-top: 25px; background-color: steelblue; color: white">登录</button>
                     <a style="width: 100%; text-align: right; display: inline-block; margin-top: 25px; color: darkblue" href="register.html">还没账号？去注册</a>
@@ -63,21 +63,21 @@
                         });
                         return;
                     }
-                    if (!this.user.code) {
-                        this.$message({
-                            message: "请输入验证码",
-                            type: "error"
-                        });
-                        return;
-                    }
-                    let res = verifyCode.validate(this.user.code);
-                    if (!res) {
-                        this.$message({
-                            message: "验证码错误",
-                            type: "error"
-                        });
-                        return;
-                    }
+                    // if (!this.user.code) {
+                    //     this.$message({
+                    //         message: "请输入验证码",
+                    //         type: "error"
+                    //     });
+                    //     return;
+                    // }
+                    // let res = verifyCode.validate(this.user.code);
+                    // if (!res) {
+                    //     this.$message({
+                    //         message: "验证码错误",
+                    //         type: "error"
+                    //     });
+                    //     return;
+                    // }
                     $.ajax({
                         url: "/api/user/login",
                         type: "POST",

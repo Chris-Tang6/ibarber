@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="test@localhost" uuid="2afcce27-4737-45fb-ab47-dc6b87cc84ed">
+    <data-source source="LOCAL" name="test@localhost" uuid="850ee4c4-62b4-49ac-9cd2-48bc21bfb85d">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
@@ -10,7 +10,6 @@
       <driver-properties>
         <property name="serverTimezone" value="GMT" />
       </driver-properties>
-      <time-zone>GMT</time-zone>
     </data-source>
   </component>
 </project>

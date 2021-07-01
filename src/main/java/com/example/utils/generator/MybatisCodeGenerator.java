@@ -23,8 +23,8 @@ public class MybatisCodeGenerator {
     private static final DruidDataSource ds = new DruidDataSource();
 
     private static final String schemaName = "test";   // 数据库名称，必填
-    private static final String[][] tables = {{"service", "Service"}};   // 必填
-    private static final String modelName = "服务项目";   // 必填
+    private static final String[][] tables = {{"charge", "Charge"}};   // 必填
+    private static final String modelName = "充值";   // 必填
 
     static {
         // 必填
